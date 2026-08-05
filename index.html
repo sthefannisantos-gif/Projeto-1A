@@ -42,7 +42,16 @@
         <h2>Educacao digital</h2>
         <p class="autor">por:Sthefanni</p>
         <p>Este site e para a aula de educacao digital do 1A</p>
+        <button>💖<span>0</span></button>
         </div>
     </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado () {
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
