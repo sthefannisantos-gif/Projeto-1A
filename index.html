@@ -22,13 +22,13 @@
             margin: 0 auto;
             display: flex;
             p.autor {
-                font-weight: bold;
-                
+                font-weight: bold;   
         }
         img {
             width: 80px;
             height: 80px;
         }
+    }
     </style>
 </head>
 <body>
@@ -43,15 +43,17 @@
         <p class="autor">por:Sthefanni</p>
         <p>Este site e para a aula de educacao digital do 1A</p>
         <button>💖<span>0</span></button>
+        <button>🤗<span>0</span></button>
         </div>
     </main>
 </body>
 <script>
-    const botao = document.querySelector("button");
+botoes.forEach(function(botao)) {
     botao.addEventListener("click", botaoClicado);
     function botaoClicado () {
         let texto = botao.querySelector("span");
         texto.textContent++;
     }
+  }  
 </script>
 </html>
